@@ -1,0 +1,146 @@
+.post-form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #330c43;
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.2s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border: 2px solid #47b2e4;
+  background: #fff;
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.input-group input[type="file"] {
+  padding: 8px;
+  background: transparent;
+  color: #c9c7c7;
+}
+
+.input-group input[type="file"]::-webkit-file-upload-button {
+  padding: 8px 16px;
+  background: #47b2e4;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.input-group input[type="file"]::-webkit-file-upload-button:hover {
+  background: #3391c3;
+}
+
+.submit-post-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #47b2e4;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submit-post-button:hover {
+  background-color: #3391c3;
+}
+
+.submit-post-button:disabled {
+  background-color: #c9c7c7;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 1.1rem;
+  color: #ff9999;
+  background: rgba(255, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 0.375rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .post-form {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+    gap: 6px;
+  }
+
+  .input-group label {
+    font-size: 1.1rem;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .input-group textarea {
+    min-height: 80px;
+  }
+
+  .input-group input[type="file"] {
+    padding: 6px;
+  }
+
+  .input-group input[type="file"]::-webkit-file-upload-button {
+    padding: 6px 12px;
+  }
+
+  .submit-post-button {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  .error {
+    font-size: 1rem;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 15px;
+  color: #fff;
+  background: transparent;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-page h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #47b2e4;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+
+.back-link:hover {
+  color: #66c7f4;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #c9c7c7;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #47b2e4;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #c9c7c7;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cta-buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cta-buttons .join-button {
+  background-color: #47b2e4;
+}
+
+.cta-buttons .forum-button {
+  border: 1px solid #fff;
+}
+
+.cta-buttons a:hover {
+  background-color: #47b2e4;
+  border-color: #47b2e4;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-page {
+    padding: 100px 15px;
+  }
+
+  .about-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section p {
+    font-size: 1.1rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-page h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}

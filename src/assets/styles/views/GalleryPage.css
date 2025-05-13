@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+.gallery-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 15px;
+  color: #fff;
+  background: transparent;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.gallery-page h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #47b2e4;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #66c7f4;
+}
+
+.not-logged-in,
+.loading,
+.no-pets,
+.no-media {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #c9c7c7;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 0.375rem;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.not-logged-in a,
+.no-pets a {
+  color: #47b2e4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.not-logged-in a:hover,
+.no-pets a:hover {
+  color: #66c7f4;
+}
+
+.gallery-page h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 15px 0 10px;
+  text-align: center;
+}
+
+.pet-folders {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pet-folders > * {
+  transition: transform 0.2s ease;
+}
+
+.pet-folders > *:hover {
+  transform: translateY(-5px); 
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery-page {
+    padding: 100px 15px;
+  }
+
+  .gallery-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .gallery-page h2 {
+    font-size: 1.8rem;
+    margin: 10px 0 8px;
+  }
+
+  .not-logged-in,
+  .loading,
+  .no-pets,
+  .no-media {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+
+  .back-link {
+    font-size: 0.9rem;
+  }
+
+  .pet-folders {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-page {
+    padding: 100px 10px;
+  }
+
+  .gallery-page h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-page h2 {
+    font-size: 1.6rem;
+    margin: 8px 0 6px;
+  }
+
+  .not-logged-in,
+  .loading,
+  .no-pets,
+  .no-media {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .back-link {
+    font-size: 0.85rem;
+  }
+
+  .pet-folders {
+    gap: 8px;
+  }
+}
